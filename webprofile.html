@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Desa Kedungringin - Beji, Pasuruan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="hero">
+    <img src="gambar-desa.jpg" alt="Pemandangan Desa Kedungringin" class="hero-img">
+    <div class="overlay">
+      <h1>Desa Kedungringin</h1>
+      <p>Kecamatan Beji, Kabupaten Pasuruan</p>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <div class="logo">Kedungringin</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <ul id="nav-list">
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#profil">Profil</a></li>
+      <li><a href="#visi">Visi & Misi</a></li>
+      <li><a href="#potensi">Potensi</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="profil" class="card">
+      <h2>Profil Desa</h2>
+      <p>Desa Kedungringin adalah salah satu desa di Kecamatan Beji, Kabupaten Pasuruan. Dikenal dengan lingkungan hijau, pertanian subur, serta masyarakat yang guyub rukun.</p>
+    </section>
+
+    <section id="visi" class="card alt">
+      <h2>Visi & Misi</h2>
+      <p><strong>Visi:</strong> "Mewujudkan Desa Kedungringin yang Mandiri, Maju, dan Berdaya Saing Berbasis Kearifan Lokal."</p>
+      <p><strong>Misi:</strong></p>
+      <ul>
+        <li>Meningkatkan kualitas pelayanan publik desa</li>
+        <li>Mengembangkan potensi ekonomi dan budaya lokal</li>
+        <li>Menjaga lingkungan yang hijau dan bersih</li>
+        <li>Mendorong partisipasi masyarakat dalam pembangunan</li>
+      </ul>
+    </section>
+
+    <section id="potensi" class="card">
+      <h2>Potensi Unggulan</h2>
+      <div class="grid-3">
+        <div class="potensi-box">
+          <h3>🌾 Pertanian Subur</h3>
+          <p>Lahan pertanian yang menghasilkan padi, sayur, dan buah secara berkelanjutan.</p>
+        </div>
+        <div class="potensi-box">
+          <h3>🎨 Kerajinan Lokal</h3>
+          <p>Warga memproduksi kerajinan tangan seperti anyaman dan batik tradisional.</p>
+        </div>
+        <div class="potensi-box">
+          <h3>🛍️ Potensi UMKM</h3>
+          <p>Berbagai UMKM unggulan seperti makanan khas desa, produk kreatif, serta jalur sepeda kampung yang menarik wisatawan.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak" class="card alt">
+      <h2>Kontak & Lokasi</h2>
+      <p>📍 Alamat: Jl. Raya Kedungringin No. 45, Beji, Pasuruan</p>
+      <p>📞 Telepon: (0343) 123456</p>
+      <p>📧 Email: <a href="mailto:desakedungringin@gmail.com">desakedungringin@gmail.com</a></p>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.5088470138825!2d112.73248707502196!3d-7.179493870707845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e780b4d0f2bd4c7%3A0x4b93a0d33c46d8ba!2sKedungringin%2C%20Kec.%20Beji%2C%20Pasuruan%2C%20Jawa%20Timur!5e0!3m2!1sen!2sid!4v1651234567890!5m2!1sen!2sid" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pemerintah Desa Kedungringin • Dibuat dengan 💚 di Beji, Pasuruan</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navList = document.getElementById('nav-list');
+    toggle.addEventListener('click', () => {
+      navList.classList.toggle('show');
+    });
+  </script>
+  <script>
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.navbar ul');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
+
+
+</body>
+</html>
